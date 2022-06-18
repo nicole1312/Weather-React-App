@@ -137,7 +137,7 @@ export default function ForecastData() {
                   <li className="icon">
                     <ReactAnimatedWeatherUpdated
                       icon="CLEAR_DAY"
-                      color="goldenrod"
+                      color="#95c6ea"
                       size={50}
                       animate={true}
                     />
@@ -176,18 +176,108 @@ export default function ForecastData() {
 
             <p className="icon">
               <ReactAnimatedWeatherUpdated
-                icon="CLEAR_DAY"
-                color="goldenrod"
+                icon="RAIN"
+                color="#95c6ea"
                 size={40}
                 animate={true}
               />
             </p>
           </div>
-          <p>Mon</p>
-          <p>Tue</p>
-          <p>Wed</p>
-          <p>Thu</p>
-          <p>Fri</p>
+          <div>
+            <p className="week-days">Mon</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>21º</strong>
+              </span>
+              <span>
+                ⇩<strong>11º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="CLEAR_DAY"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Tue</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>21º</strong>
+              </span>
+              <span>
+                ⇩<strong>11º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="PARTLY_CLOUDY_DAY"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Wed</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>21º</strong>
+              </span>
+              <span>
+                ⇩<strong>11º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="PARTLY_CLOUDY_DAY"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Thu</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>21º</strong>
+              </span>
+              <span>
+                ⇩<strong>11º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="PARTLY_CLOUDY_DAY"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Fri</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>21º</strong>
+              </span>
+              <span>
+                ⇩<strong>11º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="RAIN"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
         </div>
       </div>
     );
