@@ -11,7 +11,7 @@ export default function ForecastData() {
   function showWeather(response) {
     setLoaded(true);
     setForecast({
-      date: "17 June 2022",
+      date: "18 June 2022",
       temperature: response.data.main.temp,
       highTemperature: response.data.main.temp_max,
       lowTemperature: response.data.main.temp_min,
@@ -22,6 +22,7 @@ export default function ForecastData() {
       icon: response.data.weather[0].icon,
     });
   }
+
   function handleSubmit(event) {
     event.preventDefault();
     let apiKey = "02743828b1081c945744035baeda7192";
@@ -100,6 +101,123 @@ export default function ForecastData() {
                 </ul>
               </div>
             </div>
+          </div>
+        </div>
+        <div className="week-forecast">
+          <div>
+            <p className="week-days">Sun</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>21º</strong>
+              </span>
+              <span>
+                ⇩<strong>11º</strong>
+              </span>
+            </div>
+
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="RAIN"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Mon</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>21º</strong>
+              </span>
+              <span>
+                ⇩<strong>11º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="CLEAR_DAY"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Tue</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>23º</strong>
+              </span>
+              <span>
+                ⇩<strong>13º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="PARTLY_CLOUDY_DAY"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Wed</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>26º</strong>
+              </span>
+              <span>
+                ⇩<strong>13º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="PARTLY_CLOUDY_DAY"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Thu</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>25º</strong>
+              </span>
+              <span>
+                ⇩<strong>14º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="PARTLY_CLOUDY_DAY"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
+          </div>
+          <div>
+            <p className="week-days">Fri</p>
+            <div className="temp">
+              <span>
+                ⇧<strong>22º</strong>
+              </span>
+              <span>
+                ⇩<strong>13º</strong>
+              </span>
+            </div>
+            <p className="icon">
+              <ReactAnimatedWeatherUpdated
+                icon="RAIN"
+                color="#95c6ea"
+                size={40}
+                animate={true}
+              />
+            </p>
           </div>
         </div>
       </div>
@@ -206,10 +324,10 @@ export default function ForecastData() {
             <p className="week-days">Tue</p>
             <div className="temp">
               <span>
-                ⇧<strong>21º</strong>
+                ⇧<strong>23º</strong>
               </span>
               <span>
-                ⇩<strong>11º</strong>
+                ⇩<strong>13º</strong>
               </span>
             </div>
             <p className="icon">
@@ -225,10 +343,10 @@ export default function ForecastData() {
             <p className="week-days">Wed</p>
             <div className="temp">
               <span>
-                ⇧<strong>21º</strong>
+                ⇧<strong>26º</strong>
               </span>
               <span>
-                ⇩<strong>11º</strong>
+                ⇩<strong>13º</strong>
               </span>
             </div>
             <p className="icon">
@@ -244,10 +362,10 @@ export default function ForecastData() {
             <p className="week-days">Thu</p>
             <div className="temp">
               <span>
-                ⇧<strong>21º</strong>
+                ⇧<strong>25º</strong>
               </span>
               <span>
-                ⇩<strong>11º</strong>
+                ⇩<strong>14º</strong>
               </span>
             </div>
             <p className="icon">
@@ -263,10 +381,10 @@ export default function ForecastData() {
             <p className="week-days">Fri</p>
             <div className="temp">
               <span>
-                ⇧<strong>21º</strong>
+                ⇧<strong>22º</strong>
               </span>
               <span>
-                ⇩<strong>11º</strong>
+                ⇩<strong>13º</strong>
               </span>
             </div>
             <p className="icon">

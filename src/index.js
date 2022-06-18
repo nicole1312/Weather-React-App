@@ -21,6 +21,7 @@ function App() {
           href="https://github.com/nicole1312/Forecast-React-App"
           target="_blank"
           rel="noopener noreferrer"
+          className="open-source-link"
         >
           Open-source code
         </a>
