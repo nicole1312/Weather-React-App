@@ -105,10 +105,23 @@ h4 {
 .icon {
   text-align: center;
 }
+.week-forecast {
+  display: flex;
+  justify-content: space-between;
+  color: #35506c;
+  margin: 20px;
+}
+.week-days {
+  text-align: center;
+}
+.temp {
+  font-size: 12px;
+}
 
-small {
-  color: #326180;
-  font-weight: 600;
+.source {
+  display: block;
+  color: #35506c;
+  font-weight: 400;
   font-size: 13px;
   text-align: center;
 }

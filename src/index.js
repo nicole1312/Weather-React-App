@@ -16,11 +16,10 @@ function App() {
         <div></div>
       </div>
 
-      <small>
+      <small className="source">
         <a
-          href="https://github.com/nicole1312/weather-hub-project"
+          href="https://github.com/nicole1312/Forecast-React-App"
           target="_blank"
-          className="source"
           rel="noopener noreferrer"
         >
           Open-source code
