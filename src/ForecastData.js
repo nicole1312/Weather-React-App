@@ -229,7 +229,7 @@ export default function ForecastData() {
           <div className="weather">
             <div className="row">
               <div className="col-6">
-                <h4>18 June 2022</h4>
+                <h4>19 June 2022</h4>
                 <h3 className="city">london</h3>
                 <ul className="details">
                   <li className="description">clear sky</li>
