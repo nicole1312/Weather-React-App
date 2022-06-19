@@ -13,7 +13,6 @@ function App() {
         <div>
           <ForecastData />
         </div>
-        <div></div>
       </div>
 
       <small className="source">

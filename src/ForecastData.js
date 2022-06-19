@@ -34,7 +34,7 @@ export default function ForecastData() {
     setCity(event.target.value);
   }
 
-  let form = (
+  const form = (
     <form onSubmit={handleSubmit}>
       <input
         type="search"
@@ -59,21 +59,20 @@ export default function ForecastData() {
                 <h4>{forecast.date}</h4>
                 <h3 className="city">{city}</h3>
                 <ul className="details">
-                  <li className="description">{forecast.description}</li>
+                  <li className="description-sky">{forecast.description}</li>
                   <li>
                     <strong>{Math.round(forecast.temperature)}ºC</strong>
                   </li>
                   <div className="highLow">
                     <li>
                       <span>
-                        ⇧H:
+                        ⇧
                         <strong>{Math.round(forecast.highTemperature)}º</strong>
                       </span>
                     </li>
                     <li>
                       <span>
-                        ⇩L:
-                        <strong>{Math.round(forecast.lowTemperature)}º</strong>
+                        ⇩<strong>{Math.round(forecast.lowTemperature)}º</strong>
                       </span>
                     </li>
                   </div>
@@ -85,7 +84,7 @@ export default function ForecastData() {
             </div>
             <div className=" analysis">
               <div className="col-6 ">
-                <ul className="details">
+                <ul className="analysis-details">
                   <li>
                     <strong>Humidity:</strong>
                     {forecast.humidity}%
@@ -117,7 +116,7 @@ export default function ForecastData() {
 
             <p className="icon">
               <ReactAnimatedWeatherUpdated
-                icon="RAIN"
+                icon="CLEAR_DAY"
                 color="#95c6ea"
                 size={40}
                 animate={true}
@@ -234,21 +233,20 @@ export default function ForecastData() {
                 <h3 className="city">london</h3>
                 <ul className="details">
                   <li className="description">clear sky</li>
+                  <br />
                   <li>
                     <strong>21ºC</strong>
                   </li>
                   <div className="highLow">
                     <li>
                       <span>
-                        ⇧H:
-                        <strong>26º</strong>
+                        ⇧<strong>26º</strong>
                       </span>
                     </li>
 
                     <li>
                       <span>
-                        ⇩L:
-                        <strong>11º</strong>
+                        ⇩<strong>11º</strong>
                       </span>
                     </li>
                   </div>
@@ -265,7 +263,7 @@ export default function ForecastData() {
             </div>
             <div className=" analysis">
               <div className="col-6 ">
-                <ul className="details">
+                <ul className="analysis-details">
                   <li>
                     <strong>Humidity:</strong> 70 %
                   </li>
